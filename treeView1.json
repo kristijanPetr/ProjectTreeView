@@ -1,343 +1,755 @@
-[
-  { "type": "file", "name": ".DS_Store" },
-  { "type": "file", "name": "constants.js" },
-  { "type": "file", "name": "index.css" },
-  { "type": "file", "name": "index.js" },
-  { "type": "file", "name": "registerServiceWorker.js" },
-  {
-    "name": "actions",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": "action_modal.js" },
-      { "type": "file", "name": "actions_unit.js" },
-      { "type": "file", "name": "action_notification.js" },
-      { "type": "file", "name": "index.js" }
-    ]
-  },
-  {
-    "name": "reducers",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": "index.js" },
-      { "type": "file", "name": "reducer_alarms.js" },
-      { "type": "file", "name": "reducer_auth.js" },
-      { "type": "file", "name": "reducer_groups.js" },
-      { "type": "file", "name": "reducer_map.js" },
-      { "type": "file", "name": "reducer_modals.js" },
-      { "type": "file", "name": "reducer_notification.js" },
-      { "type": "file", "name": "reducer_units.js" },
-      { "type": "file", "name": "reducer_user.js" }
-    ]
-  },
-  {
-    "name": "helpers",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": "api.js" },
-      { "type": "file", "name": "endpoints.js" },
-      { "type": "file", "name": "image_getter.js" },
-      { "type": "file", "name": "user_store.js" }
-    ]
-  },
-  {
-    "name": "routes",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": "index.js" },
-      { "type": "file", "name": "route.js" }
-    ]
-  },
-  {
-    "name": "store",
-    "type": "folder",
-    "children": [{ "type": "file", "name": "configureStore.js" }]
-  },
-  {
-    "name": "assets",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": ".DS_Store" },
-      { "type": "file", "name": "active-tracker.png" },
-      { "type": "file", "name": "add-prev.jpg" },
-      { "type": "file", "name": "add-next.jpg" },
-      { "type": "file", "name": "add-unit.png" },
-      { "type": "file", "name": "arr-blue.png" },
-      { "type": "file", "name": "arws-blk.png" },
-      { "type": "file", "name": "battery-empty.png" },
-      { "type": "file", "name": "battery.png" },
-      { "type": "file", "name": "btn-1.png" },
-      { "type": "file", "name": "btn-2.png" },
-      { "type": "file", "name": "btn-3.png" },
-      { "type": "file", "name": "btn-4.png" },
-      { "type": "file", "name": "btn-home.png" },
-      { "type": "file", "name": "btn-print.png" },
-      { "type": "file", "name": "btn-mail.png" },
-      { "type": "file", "name": "btn-profile.png" },
-      { "type": "file", "name": "btn-settings.png" },
-      { "type": "file", "name": "close-black.png" },
-      { "type": "file", "name": "close_notification.png" },
-      { "type": "file", "name": "close.png" },
-      { "type": "file", "name": "download-btn.png" },
-      { "type": "file", "name": "en.png" },
-      { "type": "file", "name": "enter-big.png" },
-      { "type": "file", "name": "enter.png" },
-      { "type": "file", "name": "extend.png" },
-      { "type": "file", "name": "forgot-pass.png" },
-      { "type": "file", "name": "g-car.png" },
-      { "type": "file", "name": "globe.png" },
-      { "type": "file", "name": "green-btn.png" },
-      { "type": "file", "name": "info-btn.png" },
-      { "type": "file", "name": "info.png" },
-      { "type": "file", "name": "inteli-cloud.png" },
-      { "type": "file", "name": "inteli-track.png" },
-      { "type": "file", "name": "lang-header.png" },
-      { "type": "file", "name": "last-know-location.png" },
-      { "type": "file", "name": "live-chat.png" },
-      { "type": "file", "name": "live-track-btn.png" },
-      { "type": "file", "name": "log-out.png" },
-      { "type": "file", "name": "logo-login.png" },
-      { "type": "file", "name": "logo.png" },
-      { "type": "file", "name": "mail.png" },
-      { "type": "file", "name": "map.png" },
-      { "type": "file", "name": "new-user.png" },
-      { "type": "file", "name": "next-black.png" },
-      { "type": "file", "name": "next.png" },
-      { "type": "file", "name": "notes.png" },
-      { "type": "file", "name": "off.png" },
-      { "type": "file", "name": "ok.png" },
-      { "type": "file", "name": "okej.jpg" },
-      { "type": "file", "name": "on.png" },
-      { "type": "file", "name": "pin.png" },
-      { "type": "file", "name": "pin_vehicle_on.png" },
-      { "type": "file", "name": "play-btn.png" },
-      { "type": "file", "name": "play.png" },
-      { "type": "file", "name": "plus.jpg" },
-      { "type": "file", "name": "plus.png" },
-      { "type": "file", "name": "previus-location.png" },
-      { "type": "file", "name": "profile.png" },
-      { "type": "file", "name": "r-car.png" },
-      { "type": "file", "name": "red-btn.png" },
-      { "type": "file", "name": "red.png" },
-      { "type": "file", "name": "search.png" },
-      { "type": "file", "name": "settings.png" },
-      { "type": "file", "name": "track-location.png" },
-      { "type": "file", "name": "social-icons.png" },
-      { "type": "file", "name": "w-small.png" },
-      { "type": "file", "name": "warning-small.png" },
-      { "type": "file", "name": "warning.png" },
-      { "type": "file", "name": "white.png" }
-    ]
-  },
-  {
-    "name": "components",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": ".DS_Store" },
-      { "type": "file", "name": "App.js" },
-      { "type": "file", "name": "App.css" },
-      { "type": "file", "name": "index.js" },
-      {
-        "name": "Header",
-        "type": "folder",
-        "children": [{ "type": "file", "name": "Header.js" }]
-      },
-      {
-        "name": "MainDashboard",
-        "type": "folder",
-        "children": [
-          { "type": "file", "name": "Dashboard.js" },
-          { "type": "file", "name": "Footer.js" },
-          { "type": "file", "name": "Modal.js" },
-          { "type": "file", "name": "ModalContent.js" },
-          { "type": "file", "name": "remodal-theme.css" },
-          { "type": "file", "name": "remodal.css" }
-        ]
-      },
-      {
-        "name": "Profile",
-        "type": "folder",
-        "children": [{ "type": "file", "name": "Profile.js" }]
-      },
-      {
-        "name": "Notifications",
-        "type": "folder",
-        "children": [
-          { "type": "file", "name": "NotificationView.js" },
-          { "type": "file", "name": "index.css" }
-        ]
-      },
-      {
-        "name": "Settings",
-        "type": "folder",
-        "children": [{ "type": "file", "name": "Settings.js" }]
-      },
-      {
-        "name": "TamperAlerts",
-        "type": "folder",
-        "children": [{ "type": "file", "name": "TamperAlerts.js" }]
-      },
-      {
-        "name": "VideoView",
-        "type": "folder",
-        "children": [{ "type": "file", "name": "VideoView.js" }]
-      },
-      {
-        "name": "LiveTracking",
-        "type": "folder",
-        "children": [{ "type": "file", "name": "LiveTracking.js" }]
-      },
-      {
-        "name": "Login",
-        "type": "folder",
-        "children": [
-          { "type": "file", "name": "Header.js" },
-          { "type": "file", "name": "Login.css" },
-          { "type": "file", "name": "Login.js" },
-          { "type": "file", "name": "LoginForm.js" },
-          { "type": "file", "name": "Social.js" },
-          {
-            "name": "Footer",
-            "type": "folder",
-            "children": [{ "type": "file", "name": "Footer.js" }]
-          }
-        ]
-      },
-      {
-        "name": "MonitorDevice",
-        "type": "folder",
-        "children": [
-          { "type": "file", "name": ".DS_Store" },
-          {
-            "name": "Header",
-            "type": "folder",
-            "children": [
-              {
-                "name": "AddUnit",
-                "type": "folder",
-                "children": [{ "type": "file", "name": "AddUnit.js" }]
-              },
-              {
-                "name": "Navigation",
-                "type": "folder",
-                "children": [{ "type": "file", "name": "Navigation.js" }]
-              },
-              {
-                "name": "Search",
-                "type": "folder",
-                "children": [{ "type": "file", "name": "Search.js" }]
-              }
-            ]
-          },
-          {
-            "name": "DeviceDashboard",
-            "type": "folder",
-            "children": [
-              { "type": "file", "name": ".DS_Store" },
-              { "type": "file", "name": "DeviceDashboard.js" },
-              { "type": "file", "name": "Header.js" },
-              { "type": "file", "name": "NavigationPanel.js" },
-              {
-                "name": "RightPanel",
-                "type": "folder",
-                "children": [
-                  { "type": "file", "name": "Footer.js" },
-                  { "type": "file", "name": "Panel.js" }
-                ]
-              },
-              {
-                "name": "DeviceMap",
-                "type": "folder",
-                "children": [
-                  { "type": "file", "name": "Map.js" },
-                  {
-                    "name": "Header",
-                    "type": "folder",
-                    "children": [{ "type": "file", "name": "Header.js" }]
-                  },
-                  {
-                    "name": "Footer",
-                    "type": "folder",
-                    "children": [{ "type": "file", "name": "Footer.js" }]
-                  },
-                  {
-                    "name": "Map",
-                    "type": "folder",
-                    "children": [
-                      { "type": "file", "name": "MapNew.js" },
-                      { "type": "file", "name": "Marker.js" }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "DeviceData",
-                "type": "folder",
-                "children": [
-                  {
-                    "name": "DeviceGrid",
-                    "type": "folder",
-                    "children": [
-                      { "type": "file", "name": "DevicePanel.js" },
-                      {
-                        "name": "GroupsGrid",
-                        "type": "folder",
-                        "children": [
-                          { "type": "file", "name": "GroupsGrid.js" },
-                          { "type": "file", "name": "GroupsGridHeader.js" },
-                          { "type": "file", "name": "GroupsItem.js" }
-                        ]
-                      },
-                      {
-                        "name": "UnitsGrid",
-                        "type": "folder",
-                        "children": [
-                          { "type": "file", "name": "UnitInfoDatePicker.js" },
-                          { "type": "file", "name": "UnitInfoPanel.js" },
-                          { "type": "file", "name": "UnitsGrid.js" },
-                          { "type": "file", "name": "UnitsItem.js" }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "name": "UnitDetails",
-                    "type": "folder",
-                    "children": [
-                      { "type": "file", "name": "MoveUnitPanel.js" },
-                      {
-                        "name": "Details",
-                        "type": "folder",
-                        "children": [
-                          {
+{
+  "name": "flare",
+  "children": [
+
+
+    {
+      "type": "file",
+      "name": ".DS_Store"
+    },
+    {
+      "type": "file",
+      "name": "constants.js"
+    },
+    {
+      "type": "file",
+      "name": "index.css"
+    },
+    {
+      "type": "file",
+      "name": "index.js"
+    },
+    {
+      "type": "file",
+      "name": "registerServiceWorker.js"
+    },
+    {
+      "name": "actions",
+      "type": "folder",
+      "children": [{
+          "type": "file",
+          "name": "action_modal.js"
+        },
+        {
+          "type": "file",
+          "name": "actions_unit.js"
+        },
+        {
+          "type": "file",
+          "name": "action_notification.js"
+        },
+        {
+          "type": "file",
+          "name": "index.js"
+        }
+      ]
+    },
+    {
+      "name": "reducers",
+      "type": "folder",
+      "children": [{
+          "type": "file",
+          "name": "index.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_alarms.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_auth.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_groups.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_map.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_modals.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_notification.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_units.js"
+        },
+        {
+          "type": "file",
+          "name": "reducer_user.js"
+        }
+      ]
+    },
+    {
+      "name": "helpers",
+      "type": "folder",
+      "children": [{
+          "type": "file",
+          "name": "api.js"
+        },
+        {
+          "type": "file",
+          "name": "endpoints.js"
+        },
+        {
+          "type": "file",
+          "name": "image_getter.js"
+        },
+        {
+          "type": "file",
+          "name": "user_store.js"
+        }
+      ]
+    },
+    {
+      "name": "routes",
+      "type": "folder",
+      "children": [{
+          "type": "file",
+          "name": "index.js"
+        },
+        {
+          "type": "file",
+          "name": "route.js"
+        }
+      ]
+    },
+    {
+      "name": "store",
+      "type": "folder",
+      "children": [{
+        "type": "file",
+        "name": "configureStore.js"
+      }]
+    },
+    {
+      "name": "assets",
+      "type": "folder",
+      "children": [{
+          "type": "file",
+          "name": ".DS_Store"
+        },
+        {
+          "type": "file",
+          "name": "active-tracker.png"
+        },
+        {
+          "type": "file",
+          "name": "add-prev.jpg"
+        },
+        {
+          "type": "file",
+          "name": "add-next.jpg"
+        },
+        {
+          "type": "file",
+          "name": "add-unit.png"
+        },
+        {
+          "type": "file",
+          "name": "arr-blue.png"
+        },
+        {
+          "type": "file",
+          "name": "arws-blk.png"
+        },
+        {
+          "type": "file",
+          "name": "battery-empty.png"
+        },
+        {
+          "type": "file",
+          "name": "battery.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-1.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-2.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-3.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-4.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-home.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-print.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-mail.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-profile.png"
+        },
+        {
+          "type": "file",
+          "name": "btn-settings.png"
+        },
+        {
+          "type": "file",
+          "name": "close-black.png"
+        },
+        {
+          "type": "file",
+          "name": "close_notification.png"
+        },
+        {
+          "type": "file",
+          "name": "close.png"
+        },
+        {
+          "type": "file",
+          "name": "download-btn.png"
+        },
+        {
+          "type": "file",
+          "name": "en.png"
+        },
+        {
+          "type": "file",
+          "name": "enter-big.png"
+        },
+        {
+          "type": "file",
+          "name": "enter.png"
+        },
+        {
+          "type": "file",
+          "name": "extend.png"
+        },
+        {
+          "type": "file",
+          "name": "forgot-pass.png"
+        },
+        {
+          "type": "file",
+          "name": "g-car.png"
+        },
+        {
+          "type": "file",
+          "name": "globe.png"
+        },
+        {
+          "type": "file",
+          "name": "green-btn.png"
+        },
+        {
+          "type": "file",
+          "name": "info-btn.png"
+        },
+        {
+          "type": "file",
+          "name": "info.png"
+        },
+        {
+          "type": "file",
+          "name": "inteli-cloud.png"
+        },
+        {
+          "type": "file",
+          "name": "inteli-track.png"
+        },
+        {
+          "type": "file",
+          "name": "lang-header.png"
+        },
+        {
+          "type": "file",
+          "name": "last-know-location.png"
+        },
+        {
+          "type": "file",
+          "name": "live-chat.png"
+        },
+        {
+          "type": "file",
+          "name": "live-track-btn.png"
+        },
+        {
+          "type": "file",
+          "name": "log-out.png"
+        },
+        {
+          "type": "file",
+          "name": "logo-login.png"
+        },
+        {
+          "type": "file",
+          "name": "logo.png"
+        },
+        {
+          "type": "file",
+          "name": "mail.png"
+        },
+        {
+          "type": "file",
+          "name": "map.png"
+        },
+        {
+          "type": "file",
+          "name": "new-user.png"
+        },
+        {
+          "type": "file",
+          "name": "next-black.png"
+        },
+        {
+          "type": "file",
+          "name": "next.png"
+        },
+        {
+          "type": "file",
+          "name": "notes.png"
+        },
+        {
+          "type": "file",
+          "name": "off.png"
+        },
+        {
+          "type": "file",
+          "name": "ok.png"
+        },
+        {
+          "type": "file",
+          "name": "okej.jpg"
+        },
+        {
+          "type": "file",
+          "name": "on.png"
+        },
+        {
+          "type": "file",
+          "name": "pin.png"
+        },
+        {
+          "type": "file",
+          "name": "pin_vehicle_on.png"
+        },
+        {
+          "type": "file",
+          "name": "play-btn.png"
+        },
+        {
+          "type": "file",
+          "name": "play.png"
+        },
+        {
+          "type": "file",
+          "name": "plus.jpg"
+        },
+        {
+          "type": "file",
+          "name": "plus.png"
+        },
+        {
+          "type": "file",
+          "name": "previus-location.png"
+        },
+        {
+          "type": "file",
+          "name": "profile.png"
+        },
+        {
+          "type": "file",
+          "name": "r-car.png"
+        },
+        {
+          "type": "file",
+          "name": "red-btn.png"
+        },
+        {
+          "type": "file",
+          "name": "red.png"
+        },
+        {
+          "type": "file",
+          "name": "search.png"
+        },
+        {
+          "type": "file",
+          "name": "settings.png"
+        },
+        {
+          "type": "file",
+          "name": "track-location.png"
+        },
+        {
+          "type": "file",
+          "name": "social-icons.png"
+        },
+        {
+          "type": "file",
+          "name": "w-small.png"
+        },
+        {
+          "type": "file",
+          "name": "warning-small.png"
+        },
+        {
+          "type": "file",
+          "name": "warning.png"
+        },
+        {
+          "type": "file",
+          "name": "white.png"
+        }
+      ]
+    },
+    {
+      "name": "components",
+      "type": "folder",
+      "children": [{
+          "type": "file",
+          "name": ".DS_Store"
+        },
+        {
+          "type": "file",
+          "name": "App.js"
+        },
+        {
+          "type": "file",
+          "name": "App.css"
+        },
+        {
+          "type": "file",
+          "name": "index.js"
+        },
+        {
+          "name": "Header",
+          "type": "folder",
+          "children": [{
+            "type": "file",
+            "name": "Header.js"
+          }]
+        },
+        {
+          "name": "MainDashboard",
+          "type": "folder",
+          "children": [{
+              "type": "file",
+              "name": "Dashboard.js"
+            },
+            {
+              "type": "file",
+              "name": "Footer.js"
+            },
+            {
+              "type": "file",
+              "name": "Modal.js"
+            },
+            {
+              "type": "file",
+              "name": "ModalContent.js"
+            },
+            {
+              "type": "file",
+              "name": "remodal-theme.css"
+            },
+            {
+              "type": "file",
+              "name": "remodal.css"
+            }
+          ]
+        },
+        {
+          "name": "Profile",
+          "type": "folder",
+          "children": [{
+            "type": "file",
+            "name": "Profile.js"
+          }]
+        },
+        {
+          "name": "Notifications",
+          "type": "folder",
+          "children": [{
+              "type": "file",
+              "name": "NotificationView.js"
+            },
+            {
+              "type": "file",
+              "name": "index.css"
+            }
+          ]
+        },
+        {
+          "name": "Settings",
+          "type": "folder",
+          "children": [{
+            "type": "file",
+            "name": "Settings.js"
+          }]
+        },
+        {
+          "name": "TamperAlerts",
+          "type": "folder",
+          "children": [{
+            "type": "file",
+            "name": "TamperAlerts.js"
+          }]
+        },
+        {
+          "name": "VideoView",
+          "type": "folder",
+          "children": [{
+            "type": "file",
+            "name": "VideoView.js"
+          }]
+        },
+        {
+          "name": "LiveTracking",
+          "type": "folder",
+          "children": [{
+            "type": "file",
+            "name": "LiveTracking.js"
+          }]
+        },
+        {
+          "name": "Login",
+          "type": "folder",
+          "children": [{
+              "type": "file",
+              "name": "Header.js"
+            },
+            {
+              "type": "file",
+              "name": "Login.css"
+            },
+            {
+              "type": "file",
+              "name": "Login.js"
+            },
+            {
+              "type": "file",
+              "name": "LoginForm.js"
+            },
+            {
+              "type": "file",
+              "name": "Social.js"
+            },
+            {
+              "name": "Footer",
+              "type": "folder",
+              "children": [{
+                "type": "file",
+                "name": "Footer.js"
+              }]
+            }
+          ]
+        },
+        {
+          "name": "MonitorDevice",
+          "type": "folder",
+          "children": [{
+              "type": "file",
+              "name": ".DS_Store"
+            },
+            {
+              "name": "Header",
+              "type": "folder",
+              "children": [{
+                  "name": "AddUnit",
+                  "type": "folder",
+                  "children": [{
+                    "type": "file",
+                    "name": "AddUnit.js"
+                  }]
+                },
+                {
+                  "name": "Navigation",
+                  "type": "folder",
+                  "children": [{
+                    "type": "file",
+                    "name": "Navigation.js"
+                  }]
+                },
+                {
+                  "name": "Search",
+                  "type": "folder",
+                  "children": [{
+                    "type": "file",
+                    "name": "Search.js"
+                  }]
+                }
+              ]
+            },
+            {
+              "name": "DeviceDashboard",
+              "type": "folder",
+              "children": [{
+                  "type": "file",
+                  "name": ".DS_Store"
+                },
+                {
+                  "type": "file",
+                  "name": "DeviceDashboard.js"
+                },
+                {
+                  "type": "file",
+                  "name": "Header.js"
+                },
+                {
+                  "type": "file",
+                  "name": "NavigationPanel.js"
+                },
+                {
+                  "name": "RightPanel",
+                  "type": "folder",
+                  "children": [{
+                      "type": "file",
+                      "name": "Footer.js"
+                    },
+                    {
+                      "type": "file",
+                      "name": "Panel.js"
+                    }
+                  ]
+                },
+                {
+                  "name": "DeviceMap",
+                  "type": "folder",
+                  "children": [{
+                      "type": "file",
+                      "name": "Map.js"
+                    },
+                    {
+                      "name": "Header",
+                      "type": "folder",
+                      "children": [{
+                        "type": "file",
+                        "name": "Header.js"
+                      }]
+                    },
+                    {
+                      "name": "Footer",
+                      "type": "folder",
+                      "children": [{
+                        "type": "file",
+                        "name": "Footer.js"
+                      }]
+                    },
+                    {
+                      "name": "Map",
+                      "type": "folder",
+                      "children": [{
+                          "type": "file",
+                          "name": "MapNew.js"
+                        },
+                        {
+                          "type": "file",
+                          "name": "Marker.js"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "DeviceData",
+                  "type": "folder",
+                  "children": [{
+                      "name": "DeviceGrid",
+                      "type": "folder",
+                      "children": [{
+                          "type": "file",
+                          "name": "DevicePanel.js"
+                        },
+                        {
+                          "name": "GroupsGrid",
+                          "type": "folder",
+                          "children": [{
+                              "type": "file",
+                              "name": "GroupsGrid.js"
+                            },
+                            {
+                              "type": "file",
+                              "name": "GroupsGridHeader.js"
+                            },
+                            {
+                              "type": "file",
+                              "name": "GroupsItem.js"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "UnitsGrid",
+                          "type": "folder",
+                          "children": [{
+                              "type": "file",
+                              "name": "UnitInfoDatePicker.js"
+                            },
+                            {
+                              "type": "file",
+                              "name": "UnitInfoPanel.js"
+                            },
+                            {
+                              "type": "file",
+                              "name": "UnitsGrid.js"
+                            },
+                            {
+                              "type": "file",
+                              "name": "UnitsItem.js"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "UnitDetails",
+                      "type": "folder",
+                      "children": [{
+                          "type": "file",
+                          "name": "MoveUnitPanel.js"
+                        },
+                        {
+                          "name": "Details",
+                          "type": "folder",
+                          "children": [{
                             "name": "DateRange",
                             "type": "folder",
-                            "children": [
-                              { "type": "file", "name": "DateRange.js" }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "name": "Header",
-                        "type": "folder",
-                        "children": [
-                          {
+                            "children": [{
+                              "type": "file",
+                              "name": "DateRange.js"
+                            }]
+                          }]
+                        },
+                        {
+                          "name": "Header",
+                          "type": "folder",
+                          "children": [{
                             "name": "MoveUnit",
                             "type": "folder",
-                            "children": [
-                              { "type": "file", "name": "MoveUnit.js" }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+                            "children": [{
+                              "type": "file",
+                              "name": "MoveUnit.js"
+                            }]
+                          }]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

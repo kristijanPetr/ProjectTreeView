@@ -1,241 +1,215 @@
-[{
-    "type": "file",
-    "name": ".gitignore"
-}, {
-    "type": "file",
-    "name": "buildTree.js"
-}, {
-    "type": "file",
-    "name": "index.css"
-}, {
-    "type": "file",
-    "name": "index.html"
-}, {
-    "type": "file",
-    "name": "package-lock.json"
-}, {
-    "type": "file",
-    "name": "generateTree.js"
-}, {
-    "type": "file",
-    "name": "package.json"
-}, {
-    "type": "file",
-    "name": "traverseTree.js"
-}, {
-    "type": "file",
-    "name": "treeView1.json"
-}, {
-    "type": "file",
-    "name": "treeView.json"
-}, {
-    "name": ".vscode",
-    "type": "folder",
+{
+    "name": "flare",
     "children": [{
         "type": "file",
-        "name": "launch.json"
-    }]
-}, {
-    "name": ".git",
-    "type": "folder",
-    "children": [{
-        "type": "file",
-        "name": "HEAD"
+        "name": ".gitignore"
     }, {
         "type": "file",
-        "name": "config"
+        "name": "buildTree.js"
     }, {
         "type": "file",
-        "name": "description"
+        "name": "index.css"
     }, {
         "type": "file",
-        "name": "packed-refs"
+        "name": "index.html"
     }, {
         "type": "file",
-        "name": "index"
+        "name": "package-lock.json"
     }, {
-        "name": "branches",
-        "type": "folder",
-        "children": {
-            "name": "branches",
-            "type": "folder",
-            "children": []
-        }
+        "type": "file",
+        "name": "generateTree.js"
     }, {
-        "name": "hooks",
-        "type": "folder",
-        "children": [{
-            "type": "file",
-            "name": "applypatch-msg.sample"
-        }, {
-            "type": "file",
-            "name": "commit-msg.sample"
-        }, {
-            "type": "file",
-            "name": "post-update.sample"
-        }, {
-            "type": "file",
-            "name": "pre-commit.sample"
-        }, {
-            "type": "file",
-            "name": "pre-push.sample"
-        }, {
-            "type": "file",
-            "name": "pre-rebase.sample"
-        }, {
-            "type": "file",
-            "name": "update.sample"
-        }, {
-            "type": "file",
-            "name": "prepare-commit-msg.sample"
-        }, {
-            "type": "file",
-            "name": "pre-applypatch.sample"
-        }]
+        "type": "file",
+        "name": "package.json"
     }, {
-        "name": "info",
+        "type": "file",
+        "name": "traverseTree.js"
+    }, {
+        "type": "file",
+        "name": "treeView1.json"
+    }, {
+        "type": "file",
+        "name": "treeView.json"
+    }, {
+        "name": ".vscode",
         "type": "folder",
         "children": [{
             "type": "file",
-            "name": "exclude"
+            "name": "launch.json"
         }]
     }, {
-        "name": "objects",
-        "type": "folder",
-        "children": [{
-            "name": "pack",
-            "type": "folder",
-            "children": {
-                "name": "pack",
-                "type": "folder",
-                "children": []
-            }
-        }, {
-            "name": "7a",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "4a31a616bc13f65cce99f86a0a484d0bc88493"
-            }]
-        }, {
-            "name": "31",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "ff64d1957d29e77e92f3474e32821a83ecec02"
-            }]
-        }, {
-            "name": "info",
-            "type": "folder",
-            "children": {
-                "name": "info",
-                "type": "folder",
-                "children": []
-            }
-        }, {
-            "name": "a3",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "1878cad6744394c4ba6c72fb8028cb0d640f5f"
-            }]
-        }, {
-            "name": "40",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "5fb9331a6650cfeb73942a0119307c323c020d"
-            }]
-        }, {
-            "name": "db",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "e3df8a0ae27989525d21c8599dd431b9fec1a3"
-            }]
-        }, {
-            "name": "9d",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "65b2c771fb008bb81b37a646a9cfa9376216ab"
-            }]
-        }, {
-            "name": "be",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "9956f8ce1519f6ff470542a74ba125d35fbe3e"
-            }]
-        }, {
-            "name": "30",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "bc1627986aa5d1e6aebc1718de71eaee6021c5"
-            }]
-        }, {
-            "name": "a8",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "ed55840a1794a1cfb70cfdba34ff99db3185af"
-            }]
-        }, {
-            "name": "b5",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "084bae43fad6d2ed6ff96f5d02c31b40dd743b"
-            }]
-        }, {
-            "name": "98",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "0ffdb9a2b650616b93d535fd2c96e60465eeae"
-            }]
-        }]
-    }, {
-        "name": "refs",
-        "type": "folder",
-        "children": [{
-            "name": "tags",
-            "type": "folder",
-            "children": {
-                "name": "tags",
-                "type": "folder",
-                "children": []
-            }
-        }, {
-            "name": "heads",
-            "type": "folder",
-            "children": [{
-                "type": "file",
-                "name": "master"
-            }]
-        }, {
-            "name": "remotes",
-            "type": "folder",
-            "children": [{
-                "name": "origin",
-                "type": "folder",
-                "children": [{
-                    "type": "file",
-                    "name": "HEAD"
-                }]
-            }]
-        }]
-    }, {
-        "name": "logs",
+        "name": ".git",
         "type": "folder",
         "children": [{
             "type": "file",
             "name": "HEAD"
         }, {
+            "type": "file",
+            "name": "config"
+        }, {
+            "type": "file",
+            "name": "description"
+        }, {
+            "type": "file",
+            "name": "packed-refs"
+        }, {
+            "type": "file",
+            "name": "index"
+        }, {
+            "name": "branches",
+            "type": "folder",
+            "children": {
+                "name": "branches",
+                "type": "folder",
+                "children": []
+            }
+        }, {
+            "name": "hooks",
+            "type": "folder",
+            "children": [{
+                "type": "file",
+                "name": "applypatch-msg.sample"
+            }, {
+                "type": "file",
+                "name": "commit-msg.sample"
+            }, {
+                "type": "file",
+                "name": "post-update.sample"
+            }, {
+                "type": "file",
+                "name": "pre-commit.sample"
+            }, {
+                "type": "file",
+                "name": "pre-push.sample"
+            }, {
+                "type": "file",
+                "name": "pre-rebase.sample"
+            }, {
+                "type": "file",
+                "name": "update.sample"
+            }, {
+                "type": "file",
+                "name": "prepare-commit-msg.sample"
+            }, {
+                "type": "file",
+                "name": "pre-applypatch.sample"
+            }]
+        }, {
+            "name": "info",
+            "type": "folder",
+            "children": [{
+                "type": "file",
+                "name": "exclude"
+            }]
+        }, {
+            "name": "objects",
+            "type": "folder",
+            "children": [{
+                "name": "pack",
+                "type": "folder",
+                "children": {
+                    "name": "pack",
+                    "type": "folder",
+                    "children": []
+                }
+            }, {
+                "name": "7a",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "4a31a616bc13f65cce99f86a0a484d0bc88493"
+                }]
+            }, {
+                "name": "31",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "ff64d1957d29e77e92f3474e32821a83ecec02"
+                }]
+            }, {
+                "name": "info",
+                "type": "folder",
+                "children": {
+                    "name": "info",
+                    "type": "folder",
+                    "children": []
+                }
+            }, {
+                "name": "a3",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "1878cad6744394c4ba6c72fb8028cb0d640f5f"
+                }]
+            }, {
+                "name": "40",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "5fb9331a6650cfeb73942a0119307c323c020d"
+                }]
+            }, {
+                "name": "db",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "e3df8a0ae27989525d21c8599dd431b9fec1a3"
+                }]
+            }, {
+                "name": "9d",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "65b2c771fb008bb81b37a646a9cfa9376216ab"
+                }]
+            }, {
+                "name": "be",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "9956f8ce1519f6ff470542a74ba125d35fbe3e"
+                }]
+            }, {
+                "name": "30",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "bc1627986aa5d1e6aebc1718de71eaee6021c5"
+                }]
+            }, {
+                "name": "a8",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "ed55840a1794a1cfb70cfdba34ff99db3185af"
+                }]
+            }, {
+                "name": "b5",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "084bae43fad6d2ed6ff96f5d02c31b40dd743b"
+                }]
+            }, {
+                "name": "98",
+                "type": "folder",
+                "children": [{
+                    "type": "file",
+                    "name": "0ffdb9a2b650616b93d535fd2c96e60465eeae"
+                }]
+            }]
+        }, {
             "name": "refs",
             "type": "folder",
             "children": [{
+                "name": "tags",
+                "type": "folder",
+                "children": {
+                    "name": "tags",
+                    "type": "folder",
+                    "children": []
+                }
+            }, {
                 "name": "heads",
                 "type": "folder",
                 "children": [{
@@ -254,6 +228,35 @@
                     }]
                 }]
             }]
+        }, {
+            "name": "logs",
+            "type": "folder",
+            "children": [{
+                "type": "file",
+                "name": "HEAD"
+            }, {
+                "name": "refs",
+                "type": "folder",
+                "children": [{
+                    "name": "heads",
+                    "type": "folder",
+                    "children": [{
+                        "type": "file",
+                        "name": "master"
+                    }]
+                }, {
+                    "name": "remotes",
+                    "type": "folder",
+                    "children": [{
+                        "name": "origin",
+                        "type": "folder",
+                        "children": [{
+                            "type": "file",
+                            "name": "HEAD"
+                        }]
+                    }]
+                }]
+            }]
         }]
     }]
-}]
+}
