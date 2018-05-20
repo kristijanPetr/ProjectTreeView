@@ -63,14 +63,14 @@ var diretoryTreeToObj = function(dir, done) {
   });
 };
 
-var dirTree = "../";
+var dirTree = "./";
 
 diretoryTreeToObj(dirTree, function(err, res) {
   if (err) console.error(err);
 
   console.log();
 
-  fs.writeFile("./treeView.json", JSON.stringify(res), function(err) {
+  fs.writeFile("./treeView2.json", JSON.stringify(res), function(err) {
     if (err) {
       return console.log(err);
     }

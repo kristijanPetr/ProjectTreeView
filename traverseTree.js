@@ -1,16 +1,16 @@
 const treeData = require("./treeView.json");
 
-const traverseData = (treeData, parent = "") => {
+const traverseData = (treeData, parent = "/src") => {
   // parent !== "" ? console.log("PArent ", parent) : false;
-  console.log("</ul>");
+  // console.log("</ul>");
   treeData.map(item => {
     if (item.type === "file") {
-      console.log("<li> <a href=''>" + item.name + "</a></li>");
-      // console.log(item);
+      // console.log("<li> <a href=''>" + item.name + "</a></li>");
+   console.log(item);
     } else {
-      //   console.log("DIR", item.name);
-      console.log("<li> <a href=''>" + item.name + "</a></li>");
-      console.log("<ul>");
+        console.log("DIR", parent);
+      // console.log("<li> <a href=''>" + item.name + "</a></li>");
+      // console.log("<ul>");
       traverseData(item.children, parent + "/" + item.name);
     }
   });
@@ -18,18 +18,21 @@ const traverseData = (treeData, parent = "") => {
 
 const recursion = function(data, is_child) {
   var output = "";
-  if (typeof is_child == "undefined") {
+  if (typeof is_child === "undefined") {
     is_child = false;
   }
-
+ // output+= "<li " 
   // start:ul (only one of these)
   if (is_child == false) {
     output += "<ul>\n";
   }
-
+console.log("DATA",data)
   // end:ul
   var len = data.length;
   for (var i = 0; i < len; i++) {
+   // console.log("ITEM", data[i])
+    console.log(`<li> <a href="#">${data[i].name}</a>`)
+    
     // If this is a child loop, and its the first iteration, it
     // has a special case:
     // <ul>
@@ -76,5 +79,6 @@ const recursion = function(data, is_child) {
 
   return output;
 };
-let output = traverseData(treeData);
-console.log(output);
+// let output = traverseData(treeData);
+let output = recursion(treeData);
+//console.log(output);

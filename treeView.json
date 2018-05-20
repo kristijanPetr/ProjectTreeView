@@ -1,15 +1,4 @@
 [
-  { "type": "file", "name": "registerServiceWorker.js" },
-  {
-    "name": "actions",
-    "type": "folder",
-    "children": [
-      { "type": "file", "name": "action_modal.js" },
-      { "type": "file", "name": "actions_unit.js" },
-      { "type": "file", "name": "action_notification.js" },
-      { "type": "file", "name": "index.js" }
-    ]
-  },
   {
     "name": "reducers",
     "type": "folder",
@@ -24,5 +13,17 @@
       { "type": "file", "name": "reducer_units.js" },
       { "type": "file", "name": "reducer_user.js" }
     ]
+  },
+  { "type": "file", "name": "registerServiceWorker.js" },
+  {
+    "name": "actions",
+    "type": "folder",
+    "children": [
+      { "type": "file", "name": "action_modal.js" },
+      { "type": "file", "name": "actions_unit.js" },
+      { "type": "file", "name": "action_notification.js" },
+      { "type": "file", "name": "index.js" }
+    ]
   }
+
 ]
