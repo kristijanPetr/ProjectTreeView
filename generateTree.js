@@ -1,26 +1,3 @@
-// // List all files in a directory in Node.js recursively in a synchronous fashion
-// var tree = {};
-// var walkSync = function(dir, filelist) {
-//   var fs = fs || require("fs"),
-//     files = fs.readdirSync(dir);
-//   filelist = filelist || [];
-//   files.forEach(function(file) {
-//     if (fs.statSync(dir + file).isDirectory()) {
-//       //   console.log("DIR", dir + file + "/");
-//       tree[dir + file + "/"] = [];
-//       filelist = walkSync(dir + file + "/", filelist);
-//     } else {
-//       // tree[dir + file + "/"].push(file);
-//       filelist.push(file);
-//     }
-//   });
-//   //   console.log(filelist);
-//   return filelist;
-// };
-
-// walkSync("./src/");
-// console.log(tree);
-
 var fs = require("fs");
 var path = require("path");
 
@@ -63,14 +40,19 @@ var diretoryTreeToObj = function(dir, done) {
   });
 };
 
-var dirTree = "./";
+var dirTree = __dirname;
 
+// console.log(__dirname);
 diretoryTreeToObj(dirTree, function(err, res) {
   if (err) console.error(err);
-
-  console.log();
-
-  fs.writeFile("./treeView2.json", JSON.stringify(res), function(err) {
+  let output = {
+    name: "Parent",
+    children: []
+  };
+  if (res) {
+    output.children = res;
+  }
+  fs.writeFile("./html/output.json", JSON.stringify(output), function(err) {
     if (err) {
       return console.log(err);
     }
