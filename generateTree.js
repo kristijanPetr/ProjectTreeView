@@ -1,5 +1,6 @@
 var fs = require("fs");
 var path = require("path");
+const { checkFolderExists } = require("./copyFiles");
 
 var diretoryTreeToObj = function(dir, done) {
   var results = [];
@@ -40,23 +41,32 @@ var diretoryTreeToObj = function(dir, done) {
   });
 };
 
-var dirTree = __dirname;
+var dirTree = process.cwd() || __dirname;
 
 // console.log(__dirname);
-diretoryTreeToObj(dirTree, function(err, res) {
-  if (err) console.error(err);
-  let output = {
-    name: "Parent",
-    children: []
-  };
-  if (res) {
-    output.children = res;
-  }
-  fs.writeFile("./html/output.json", JSON.stringify(output), function(err) {
-    if (err) {
-      return console.log(err);
+const init = () => {
+  diretoryTreeToObj(dirTree, function(err, res) {
+    if (err) console.error(err);
+    let output = {
+      name: "Parent",
+      children: []
+    };
+    if (res) {
+      output.children = res;
     }
-
-    console.log("The file was saved!");
+    checkFolderExists().then(resp => {
+      fs.writeFile(
+        `${dirTree}/output/output.json`,
+        JSON.stringify(output),
+        function(err) {
+          if (err) {
+            return console.log(err);
+          }
+          console.log("The file was saved!");
+        }
+      );
+    });
   });
-});
+};
+
+module.exports = { generateTree: init };

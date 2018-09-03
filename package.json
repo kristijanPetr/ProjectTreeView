@@ -2,13 +2,15 @@
   "name": "projectTreeView",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "generateTree.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node generateTree.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {}
+  "license": "MIT",
+  "dependencies": {
+    "copy-dir": "^0.4.0"
+  }
 }
