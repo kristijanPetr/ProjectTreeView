@@ -10,7 +10,7 @@ npm install -g projecttreeview
 
 # usage
 
-    Navigate to some project structure
+Navigate to some project structure
 
 ```js
 projecttreeview .
