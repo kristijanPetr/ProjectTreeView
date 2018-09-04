@@ -1,16 +1,23 @@
 {
-  "name": "projectTreeView",
+  "name": "projecttreeview",
   "version": "1.0.0",
-  "description": "Generate Tree Structure of current project folder.",
+  "description": "Generate Tree view from Project Structure",
   "main": "generateTree.js",
   "bin": {
-    "generateTree": "./bin/demo.js"
+    "projecttreeview": "./bin/demo.js"
   },
-  "preferGlobal": true,
-  "keywords": [],
-  "author": "Kristijan Petrovski",
-  "license": "MIT",
   "dependencies": {
     "copy-dir": "^0.4.0"
-  }
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristijanPetr/ProjectTreeView.git"
+  },
+  "author": "Kristijan Petrovski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kristijanPetr/ProjectTreeView/issues"
+  },
+  "homepage": "https://github.com/kristijanPetr/ProjectTreeView#readme"
 }
