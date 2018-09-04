@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/kristijanPetr/ProjectTreeView/issues"
   },
-  "homepage": "https://github.com/kristijanPetr/ProjectTreeView#readme"
+  "homepage": "https://github.com/kristijanPetr/ProjectTreeView#readme",
+  "keywords": [
+    "projecttreeview",
+    "tree-structure",
+    "folder-tree",
+    "visualize-project"
+  ]
 }
