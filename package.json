@@ -1,14 +1,14 @@
 {
   "name": "projectTreeView",
   "version": "1.0.0",
-  "description": "",
+  "description": "Generate Tree Structure of current project folder.",
   "main": "generateTree.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node generateTree.js"
+  "bin": {
+    "generateTree": "./bin/demo.js"
   },
+  "preferGlobal": true,
   "keywords": [],
-  "author": "",
+  "author": "Kristijan Petrovski",
   "license": "MIT",
   "dependencies": {
     "copy-dir": "^0.4.0"

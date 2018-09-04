@@ -1,14 +1,14 @@
-var fs = require("fs");
-var path = require("path");
+const fs = require("fs");
+const path = require("path");
 const { checkFolderExists } = require("./copyFiles");
 
-var diretoryTreeToObj = function(dir, done) {
-  var results = [];
+const diretoryTreeToObj = function(dir, done) {
+  let results = [];
 
   fs.readdir(dir, function(err, list) {
     if (err) return done(err);
 
-    var pending = list.length;
+    let pending = list.length;
 
     if (!pending)
       return done(null, {
@@ -41,9 +41,8 @@ var diretoryTreeToObj = function(dir, done) {
   });
 };
 
-var dirTree = process.cwd() || __dirname;
+const dirTree = process.cwd() || __dirname;
 
-// console.log(__dirname);
 const init = () => {
   diretoryTreeToObj(dirTree, function(err, res) {
     if (err) console.error(err);
