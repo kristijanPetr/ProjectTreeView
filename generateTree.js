@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const { checkFolderExists } = require("./copyFiles");
+const fs = require('fs');
+const path = require('path');
+const { checkFolderExists } = require('./copyFiles');
 
 const diretoryTreeToObj = function(dir, done) {
   let results = [];
@@ -13,7 +13,7 @@ const diretoryTreeToObj = function(dir, done) {
     if (!pending)
       return done(null, {
         name: path.basename(dir),
-        type: "folder",
+        type: 'folder',
         children: results
       });
 
@@ -24,14 +24,14 @@ const diretoryTreeToObj = function(dir, done) {
           diretoryTreeToObj(file, function(err, res) {
             results.push({
               name: path.basename(file),
-              type: "folder",
+              type: 'folder',
               children: res
             });
             if (!--pending) done(null, results);
           });
         } else {
           results.push({
-            type: "file",
+            type: 'file',
             name: path.basename(file)
           });
           if (!--pending) done(null, results);
@@ -47,21 +47,21 @@ const init = () => {
   diretoryTreeToObj(dirTree, function(err, res) {
     if (err) console.error(err);
     let output = {
-      name: "Parent",
+      name: 'Parent',
       children: []
     };
     if (res) {
       output.children = res;
     }
-    checkFolderExists().then(resp => {
+    checkFolderExists().then((resp) => {
       fs.writeFile(
-        `${dirTree}/output/output.json`,
-        JSON.stringify(output),
+        `${dirTree}/output/output.js`,
+        `var outputTreeData = ${JSON.stringify(output)}`,
         function(err) {
           if (err) {
             return console.log(err);
           }
-          console.log("The file was saved!");
+          console.log('The file was saved!');
         }
       );
     });

@@ -10,13 +10,13 @@ npm install -g projecttreeview
 
 # usage
 
-Navigate to some project structure
+Navigate to some project structure and run
 
 ```js
 projecttreeview .
 ```
 
-Generates output/ folder with html file which current limitation is to open with Live Server (ex. VSCode)
+Generates `output/` folder with html file
 
 ### License
 
